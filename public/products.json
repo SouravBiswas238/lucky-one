@@ -1,0 +1,74 @@
+[
+    {
+        "id": "a74d-a77b362d6ead",
+        "category": "Fancy pen",
+        "name": "Ball Point",
+        "price": 20,
+        "ratings": 4,
+        "img": "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+        "id": "124e13b9-sou-4b2f-jsk",
+        "category": "Fancy pen",
+        "name": "Pen 1636",
+        "price": 4,
+        "ratings": 7,
+        "img": "https://image.shutterstock.com/image-photo/blue-pen-isolated-on-white-260nw-557418118.jpg"
+    },
+    {
+        "id": "124e13-pol-4b2f-a74d",
+        "category": "Fancy pen",
+        "name": "Writing Pen",
+        "price": 5,
+        "ratings": 8,
+        "img": "https://image.shutterstock.com/image-photo/blue-pen-isolated-on-white-260nw-557418118.jpg"
+    },
+    {
+        "id": "124e13-jkl-4b2f-a74d",
+        "category": "Fancy pen",
+        "name": "Writing Pen",
+        "price": 6,
+        "ratings": 5,
+        "img": "https://media.istockphoto.com/photos/pen-picture-id1059543698?b=1&k=20&m=1059543698&s=170667a&w=0&h=XkV_uYBfIWrAfcblgHD3oH3I-Pu2L0gvxy9bmAq-jj0="
+    },
+    {
+        "id": "123-asm-4b2f-a74d",
+        "category": "Fancy pen",
+        "name": "Fountain pen",
+        "price": 4,
+        "ratings": 5,
+        "img": "https://ichef.bbci.co.uk/news/464/mcs/media/images/60386000/jpg/_60386423_ink_thinkstock.jpg"
+    },
+    {
+        "id": "124e13-asm-4b2f-asd",
+        "category": "Fancy pen",
+        "name": "Art and Science",
+        "price": 7,
+        "ratings": 5,
+        "img": "https://amrita.edu/wp-content/uploads/2019/01/fountain-pen-blog.jpg"
+    },
+    {
+        "id": "124e13-asm-asd-a74d",
+        "category": "Fancy pen",
+        "name": "Ink Pen",
+        "price": 9,
+        "ratings": 5,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0aWF-HHhC6gTalcPhyY7L5JSOhVam0OlSw&usqp=CAU"
+    },
+    {
+        "id": "124e13-asm-asd-ask",
+        "category": "Fancy pen",
+        "name": "Ink Pen 1890",
+        "price": 10,
+        "ratings": 5,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL2xnGQnBp0JR3gbL261n56KuKkSL0ZRo2Zg&usqp=CAU"
+    },
+    {
+        "id": "skl-asm-asd-ask",
+        "category": "Fancy pen",
+        "name": "Quill pen",
+        "price": 5,
+        "ratings": 3,
+        "img": "https://media.istockphoto.com/vectors/feather-pen-vector-id483348985?k=20&m=483348985&s=612x612&w=0&h=LNsElZ3eRHqu7MhhwsaM0nGbGaQzQALMNVfSt1y9Ii4="
+    }
+]

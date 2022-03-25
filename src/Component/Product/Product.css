@@ -1,0 +1,30 @@
+.main-container{
+   display: grid;
+   grid-template-columns: 4fr 1fr;
+   margin-top: 50px;
+   background-color: whitesmoke;
+}
+
+.products-container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 40px;
+}
+.cart-container{
+   background: #2e2a244d;
+   text-align: center;
+}
+
+.container{
+    font-size: 2rem;
+    text-align: center;
+}
+.container h3{
+   margin: 10px;
+   color: blueviolet;
+}
+.container p{
+   margin: 5px;
+   font-size: 1.3rem;
+   /* margin-bottom: 50px; */
+}
