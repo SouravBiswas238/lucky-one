@@ -5,7 +5,7 @@ const RandomProduct = (props) => {
 
     return (
         <div className='random-product'>
-            <p>Random Product: {props.random}</p>
+            <p>Random Product: {props?.random?.name}</p>
         </div>
     );
 };

@@ -7,7 +7,7 @@ import './Product.css'
 const Product = () => {
     const [products, setProducts] = useState([]);
     const [curt, setCurt] = useState([]);
-    const [random, setRandom] = useState([]);
+    const [random, setRandom] = useState({});
 
 
     useEffect(() => {
@@ -18,8 +18,16 @@ const Product = () => {
 
 
     const handelAddToCart = (product) => {
-        let newCurt = [...curt, product];
-        setCurt(newCurt);
+        const isInCurt = curt.find(p => p.id === product.id);
+        if (!isInCurt) {
+            let newCurt = [...curt, product];
+            setCurt(newCurt);
+        }
+        else {
+            alert("This Product is already In curt")
+        }
+
+
     }
     const EmptyCurt = () => {
         let newCurt = [];
@@ -28,8 +36,7 @@ const Product = () => {
     const Random = () => {
         const ranArr = [...curt];
         let a = Math.floor(Math.random() * ranArr.length);
-
-        setRandom(a);
+        setRandom(ranArr[a]);
     }
     return (
         <div className='container'>
