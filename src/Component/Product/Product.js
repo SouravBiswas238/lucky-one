@@ -1,15 +1,36 @@
 import React, { useEffect, useState } from 'react';
-import Shop from '../Shop/Shop';
+import Curt from '../Curt/Curt';
+import RandomProduct from '../RandomProduct/RandomProduct';
+import SingleProduct from '../SingleProduct/SingleProduct';
 import './Product.css'
 
 const Product = () => {
     const [products, setProducts] = useState([]);
+    const [curt, setCurt] = useState([]);
+    const [random, setRandom] = useState([]);
+
 
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
+
+
+    const handelAddToCart = (product) => {
+        let newCurt = [...curt, product];
+        setCurt(newCurt);
+    }
+    const EmptyCurt = () => {
+        let newCurt = [];
+        setCurt(newCurt);
+    }
+    const Random = () => {
+        let a = Math.floor(Math.random() * 4);
+        const randomCurt = curt.filter(random => random === a);
+
+        setRandom(randomCurt);
+    }
     return (
         <div className='container'>
             <h3>Fancy Pen</h3>
@@ -18,17 +39,25 @@ const Product = () => {
 
                 <div className='products-container'>
                     {
-                        products.map(product => <Shop
+                        products.map(product => <SingleProduct
                             key={product.id}
                             product={product}
-                        >
-                        </Shop>)
+                            handelAddToCart={handelAddToCart}
+                        ></SingleProduct>)
                     }
                 </div>
                 <div className='cart-container'>
-                    curt
-
+                    <Curt curt={curt}
+                        EmptyCurt={EmptyCurt}
+                        Random={Random}
+                    ></Curt>
+                    <div>
+                        <RandomProduct
+                            random={random}
+                        ></RandomProduct>
+                    </div>
                 </div>
+
             </div>
         </div >
     );
