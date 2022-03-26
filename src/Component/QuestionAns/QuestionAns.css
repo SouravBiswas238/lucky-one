@@ -1,7 +1,7 @@
 .question-container{
     display: flex;
     justify-content: center;
-    background-color: rgba(53, 219, 241, 0.178);
+    background-color: lightblue;
 }
 .question-ans{
     /* display: flex; */
@@ -13,3 +13,11 @@
 .question-ans h3{
     font-size: 1.5rem;
 }
+@media only screen and (max-width: 600px) {
+    .question-container{
+        display: block;
+    }
+    .question-ans{
+        width: 100%;
+    }
+  }
