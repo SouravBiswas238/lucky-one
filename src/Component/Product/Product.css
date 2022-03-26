@@ -1,6 +1,6 @@
 .main-container{
    display: grid;
-   grid-template-columns: 4fr 1fr;
+   grid-template-columns: 1fr 4fr;
    margin-top: 50px;
    background-color: whitesmoke;
 }
@@ -29,3 +29,21 @@
    font-size: 1.3rem;
    /* margin-bottom: 50px; */
 }
+
+@media only screen and (max-width: 600px) {
+   body {
+     background-color: lightblue;
+   }
+   .main-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 50px;
+      background-color: whitesmoke;
+   }
+   .products-container{
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 00px;
+      gap: 10px;
+   }
+ }

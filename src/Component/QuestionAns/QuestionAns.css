@@ -1,0 +1,15 @@
+.question-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(53, 219, 241, 0.178);
+}
+.question-ans{
+    /* display: flex; */
+    width: 50%;
+}
+.question-ans h3,p{
+    margin: 10px;
+}
+.question-ans h3{
+    font-size: 1.5rem;
+}

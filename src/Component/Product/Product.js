@@ -26,26 +26,16 @@ const Product = () => {
         setCurt(newCurt);
     }
     const Random = () => {
-        let a = Math.floor(Math.random() * 4);
-        const randomCurt = curt.filter(random => random === a);
+        const ranArr = [...curt];
+        let a = Math.floor(Math.random() * ranArr.length);
 
-        setRandom(randomCurt);
+        setRandom(a);
     }
     return (
         <div className='container'>
             <h3>Fancy Pen</h3>
             <p className=''>Select Your Favourite Pen</p>
             <div className='main-container'>
-
-                <div className='products-container'>
-                    {
-                        products.map(product => <SingleProduct
-                            key={product.id}
-                            product={product}
-                            handelAddToCart={handelAddToCart}
-                        ></SingleProduct>)
-                    }
-                </div>
                 <div className='cart-container'>
                     <Curt curt={curt}
                         EmptyCurt={EmptyCurt}
@@ -57,6 +47,17 @@ const Product = () => {
                         ></RandomProduct>
                     </div>
                 </div>
+
+                <div className='products-container'>
+                    {
+                        products.map(product => <SingleProduct
+                            key={product.id}
+                            product={product}
+                            handelAddToCart={handelAddToCart}
+                        ></SingleProduct>)
+                    }
+                </div>
+
 
             </div>
         </div >
